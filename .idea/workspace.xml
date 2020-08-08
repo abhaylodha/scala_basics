@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d908d1bc-f23f-4777-a484-9befa8090adb" name="Default" comment="" />
+    <list default="true" id="d908d1bc-f23f-4777-a484-9befa8090adb" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lectures/part2_oop/Sr_01_OOPBasics.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_05_CallByValueCallByName.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_05_CallByValueCallByName.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_06_DefaultArguments.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_06_DefaultArguments.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_07_StringOperations.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_07_StringOperations.scala" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +20,44 @@
     <favorites_list name="scala_basics" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Sr_No_07_StringOperations.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_07_StringOperations.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sr_No_06_DefaultArguments.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_06_DefaultArguments.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sr_No_05_CallByValueCallByName.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_05_CallByValueCallByName.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sr_01_OOPBasics.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_01_OOPBasics.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -27,6 +70,9 @@
     <findStrings>
       <find>scalap</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -44,15 +90,19 @@
         <option value="$PROJECT_DIR$/src/lectures/part1basics/CallByValueCallByName.scala" />
         <option value="$PROJECT_DIR$/src/lectures/part1basics/Sr_No_06_DefaultArguments.scala" />
         <option value="$PROJECT_DIR$/src/lectures/part1basics/Sr_No_07_StringOperations.scala" />
+        <option value="$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_05_CallByValueCallByName.scala" />
+        <option value="$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_06_DefaultArguments.scala" />
+        <option value="$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_07_StringOperations.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="11" />
-    <option name="y" value="23" />
-    <option name="width" value="1677" />
-    <option name="height" value="862" />
+    <option name="x" value="9" />
+    <option name="y" value="19" />
+    <option name="width" value="1341" />
+    <option name="height" value="689" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <flattenPackages ProjectPane="false" />
@@ -82,6 +132,20 @@
               <item name="scala_basics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lectures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scala_basics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scala_basics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lectures" type="462c0819:PsiDirectoryNode" />
+              <item name="part1_basics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scala_basics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scala_basics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lectures" type="462c0819:PsiDirectoryNode" />
+              <item name="part2_oop" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -240,7 +304,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -250,12 +315,12 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.3803419" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.496139" visible="true" weight="0.2758389" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.496139" visible="true" weight="0.33252427" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info id="Structure" order="6" sideWeight="0.503861" side_tool="true" weight="0.13825503" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
@@ -353,27 +418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_07_StringOperations.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_06_DefaultArguments.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" selection-start-line="6" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_05_CallByValueCallByName.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lectures/part1_basics/Sr_02_Expressions.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -385,6 +429,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_01_OOPBasics.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_05_CallByValueCallByName.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_06_DefaultArguments.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lectures/part1_basics/Sr_No_07_StringOperations.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>

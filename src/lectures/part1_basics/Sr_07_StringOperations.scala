@@ -1,6 +1,6 @@
 package lectures.part1_basics
 
-object Sr_No_07_StringOperations extends App {
+object Sr_07_StringOperations extends App {
 
   val str: String = "Hi, I'm learning scala."
 

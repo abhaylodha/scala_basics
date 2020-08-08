@@ -1,6 +1,6 @@
 package lectures.part1_basics
 
-object Sr_No_05_CallByValueCallByName extends App {
+object Sr_05_CallByValueCallByName extends App {
 
   def callByValue(x: Long) = {
     println("By Value => " + x)

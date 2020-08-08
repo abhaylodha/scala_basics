@@ -2,7 +2,7 @@ package lectures.part1_basics
 
 import scala.annotation.tailrec
 
-object Sr_No_06_DefaultArguments extends App {
+object Sr_06_DefaultArguments extends App {
 
   //********************************************************
   // acc is given a default value.
