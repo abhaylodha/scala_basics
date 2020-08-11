@@ -8,6 +8,15 @@ object Sr_01_ValuesVariablesTypes extends App {
   val x: Int = 42
   println(x)
 
+
+  val str =
+
+
+    "5968956"
+
+
+  val s = ""
+
   //Won't compile.
   //x = 3
 
