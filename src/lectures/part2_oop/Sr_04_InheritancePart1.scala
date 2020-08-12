@@ -1,6 +1,6 @@
 package lectures.part2_oop
 
-object Sr_04_InheritanceAndTraits extends App {
+object Sr_04_InheritancePart1 extends App {
 
   //==================================================
   // Inheriting simple class
@@ -45,21 +45,5 @@ object Sr_04_InheritanceAndTraits extends App {
 
   //Auxiliary constructor of Super class
   class Infant(name: String) extends Person(name)
-
-  //==================================================
-  // Overriding
-  //==================================================
-
-  class Dog extends Animal {
-    override def makeNoise = {
-      //Calling super class method (If required).
-      //super.makeNoise
-      println("bho bho")
-    }
-
-    val dog = new Dog
-    dog.makeNoise
-  }
-
 
 }

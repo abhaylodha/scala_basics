@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d908d1bc-f23f-4777-a484-9befa8090adb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lectures/part2_oop/Sr_03_Objects.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lectures/part2_oop/Sr_04_InheritanceAndTraits.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lectures/part2_oop/Sr_05_InheritancePart2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lectures/part2_oop/Sr_06_AbstractDataTypes.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part1_basics/Sr_01_ValuesVariablesTypes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part1_basics/Sr_01_ValuesVariablesTypes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2_oop/Sr_02_MethodNotations.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part2_oop/Sr_02_MethodNotations.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/playground/ScalaPlayground.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground/ScalaPlayground.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/playground/WithMainMethod.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground/WithMainMethod.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part2_oop/Sr_04_InheritanceAndTraits.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part2_oop/Sr_04_InheritancePart1.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +20,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Sr_04_InheritanceAndTraits.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_04_InheritanceAndTraits.scala">
+      <file leaf-file-name="Sr_04_InheritancePart1.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_04_InheritancePart1.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+            <state relative-caret-position="252">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sr_05_InheritancePart2.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_05_InheritancePart2.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sr_06_AbstractDataTypes.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_06_AbstractDataTypes.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -45,6 +60,8 @@
     <findStrings>
       <find>scalap</find>
       <find>learns</find>
+      <find>`````</find>
+      <find>makeNoise</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -74,6 +91,7 @@
         <option value="$PROJECT_DIR$/src/playground/WithMainMethod.scala" />
         <option value="$PROJECT_DIR$/src/playground/ScalaPlayground.scala" />
         <option value="$PROJECT_DIR$/src/lectures/part2_oop/Sr_04_Inheritance_And_Traits.scala" />
+        <option value="$PROJECT_DIR$/src/lectures/part2_oop/Sr_05_InheritanceAndTraits.scala" />
         <option value="$PROJECT_DIR$/src/lectures/part2_oop/Sr_04_InheritanceAndTraits.scala" />
       </list>
     </option>
@@ -150,18 +168,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Sr_04_InheritanceAndTraits">
-    <configuration name="Sr_01_OOPBasics" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part2_oop.Sr_01_OOPBasics" />
-      <module name="scala_basics" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part2_oop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="Application.Sr_05_InheritanceAndTraits">
     <configuration name="Sr_02_MethodNotations" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part2_oop.Sr_02_MethodNotations" />
       <module name="scala_basics" />
@@ -186,6 +193,17 @@
     </configuration>
     <configuration name="Sr_04_InheritanceAndTraits" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part2_oop.Sr_04_InheritanceAndTraits" />
+      <module name="scala_basics" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lectures.part2_oop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Sr_05_InheritanceAndTraits" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part2_oop.Sr_05_InheritanceAndTraits" />
       <module name="scala_basics" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -248,19 +266,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.Sr_01_OOPBasics" />
       <item itemvalue="Application.Sr_02_MethodNotations" />
       <item itemvalue="Application.Sr_03_Objects" />
       <item itemvalue="Application.WithMainMethod" />
       <item itemvalue="Application.Sr_04_InheritanceAndTraits" />
+      <item itemvalue="Application.Sr_05_InheritanceAndTraits" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Sr_05_InheritanceAndTraits" />
         <item itemvalue="Application.Sr_04_InheritanceAndTraits" />
         <item itemvalue="Application.WithMainMethod" />
         <item itemvalue="Application.Sr_03_Objects" />
         <item itemvalue="Application.Sr_02_MethodNotations" />
-        <item itemvalue="Application.Sr_01_OOPBasics" />
       </list>
     </recent_temporary>
   </component>
@@ -282,26 +300,35 @@
       <option name="presentableId" value="Default" />
       <updated>1596869727378</updated>
     </task>
+    <task id="LOCAL-00001" summary="Enhancements">
+      <created>1597163828052</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597163828052</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="720" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32616487" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.3236111" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32928804" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.3297491" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.37777779" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.375" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49462366" weight="0.22087379" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49462366" visible="true" weight="0.22087379" />
+      <window_info anchor="bottom" id="Find" order="5" />
       <window_info id="Structure" order="6" sideWeight="0.50537634" side_tool="true" weight="0.33252427" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
@@ -313,14 +340,12 @@
       <window_info anchor="right" id="Commander" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="5" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.3781362" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.37634408" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49462366" visible="true" weight="0.22087379" />
@@ -331,6 +356,7 @@
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
+      <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39930555" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="bottom" id="Terminal" order="0" />
@@ -346,6 +372,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Enhancements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhancements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -458,20 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_03_Objects.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_02_MethodNotations.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="69" lean-forward="true" selection-start-line="66" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.classpath">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -482,10 +498,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_04_InheritanceAndTraits.scala">
+    <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_02_MethodNotations.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+        <state relative-caret-position="298">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_03_Objects.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_05_InheritancePart2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_04_InheritancePart1.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_06_AbstractDataTypes.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
