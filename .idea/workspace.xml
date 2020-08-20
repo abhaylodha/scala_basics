@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d908d1bc-f23f-4777-a484-9befa8090adb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/excercises/Sr_01_MyList.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lectures/part2_oop/Sr_07_AbstractDataTypeExercises.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playground/PlayGroundWorksheet.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lectures/part2_oop/Sr_07_Generics.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/playground/ScalaPlayground.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground/ScalaPlayground.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Sr_01_MyList.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/excercises/Sr_01_MyList.scala">
+      <file leaf-file-name="Sr_07_Generics.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_07_Generics.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+            <state relative-caret-position="63">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -83,6 +80,7 @@
         <option value="$PROJECT_DIR$/src/lectures/part2_oop/Sr_07_AbstractDataTypeExercises.scala" />
         <option value="$PROJECT_DIR$/src/excercises/Sr_1_MyList.scala" />
         <option value="$PROJECT_DIR$/src/excercises/Sr_01_MyList.scala" />
+        <option value="$PROJECT_DIR$/src/lectures/part2_oop/Sr_07_Generics.scala" />
       </list>
     </option>
   </component>
@@ -108,6 +106,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,8 +144,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,27 +315,32 @@
       <option name="project" value="LOCAL" />
       <updated>1597217130620</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Inheritance And traits with an exercise">
+      <created>1597770200404</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597770200420</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="720" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.31805557" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32928804" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.3297491" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.37222221" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.37096775" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49462366" weight="0.22411004" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49462366" visible="true" weight="0.22734627" />
       <window_info id="Structure" order="6" sideWeight="0.50537634" side_tool="true" weight="0.33252427" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
@@ -350,20 +353,21 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.31805557" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.37275985" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3297491" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49462366" weight="0.22411004" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49462366" visible="true" weight="0.22734627" />
       <window_info id="Structure" order="6" sideWeight="0.50537634" side_tool="true" weight="0.33252427" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.37096775" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -372,10 +376,10 @@
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3297491" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" id="Commander" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.31899643" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.31805557" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32928804" />
       <window_info id="Favorites" order="3" side_tool="true" weight="0.32928804" />
     </layout-to-restore>
@@ -385,7 +389,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Enhancements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enhancements" />
+    <MESSAGE value="Inheritance And traits with an exercise" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inheritance And traits with an exercise" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -551,31 +556,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_07_AbstractDataTypeExercises.scala" />
+    <entry file="file://$PROJECT_DIR$/src/excercises/Sr_01_MyList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-687">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_01_OOPBasics.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
+        <state relative-caret-position="468">
           <caret line="68" selection-start-line="64" selection-end-line="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_06_AbstractDataTypes.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="144">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_07_AbstractDataTypeExercises.scala">
+    <entry file="file://$PROJECT_DIR$/src/lectures/part2_oop/Sr_07_Generics.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/excercises/Sr_01_MyList.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
