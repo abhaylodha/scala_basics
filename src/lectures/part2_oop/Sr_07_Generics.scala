@@ -51,7 +51,36 @@ object Sr_07_Generics extends App {
   // InVariant List
   class InVariantList[A]
 
-  val animalList_2: InVariantList[Animal] = new InVariantList[Cat]
+  //Below will not work as it is invariant list.
+  //val animalList_2: InVariantList[Animal] = new InVariantList[Cat]
 
+  //3. Hell no. Contra variance.
+  class ContraVarianceList[-A]
+
+  val contravariantList: ContraVarianceList[Cat] = new ContraVarianceList[Animal]
+  //Where is this used ?
+  //Very special cases
+  //For ex -
+  class Trainer[-A]
+  val catTrainer: Trainer[Cat] = new Trainer[Animal]
+
+  //Bounded Types
+  //Allows generic classes to be used only for specific set of classes.
+
+  //Below only accepts type parameters which are sub-types of Animal
+  class Cage[A <: Dog](val animal: A)
+  val cage = new Cage(new Dog)
+
+  //When to use Bounded Types ?
+  //When we want to do operation like - Adding a Dog to List of Cats, should yield a List on Animals.
+  //For Ex.
+  class MyList_V2[+A] {
+    //With below, we get error like - covariant type A occurs in contravariant position in type A of value a
+    //def add(a : A) = ???
+
+    //Solution
+    def add[B >: A](a: B): MyList_V2[B] = ???
+  }
 
 }
+
