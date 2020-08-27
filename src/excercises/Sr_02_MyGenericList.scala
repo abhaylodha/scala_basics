@@ -64,5 +64,5 @@ object Sr_02_MyGenericList extends App {
   println(s"${l5.add(5)}")
   println(s"${l5.tail}")
   println(s"${l5.tail.head}")
-
 }
+
