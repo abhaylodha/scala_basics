@@ -13,39 +13,39 @@ object Sr_02_MyGenericList extends App {
    */
 
   abstract class MyGenericList[+A] {
-    def head: Int
+    def head: A
 
     def tail: MyGenericList[A]
 
     def isEmpty: Boolean
 
-    def add(elem: Int): MyGenericList[A]
+    def add[B >: A](elem: B): MyGenericList[B]
 
     def elementToString: String
 
     override def toString = s"[$elementToString]"
   }
 
-  object Empty extends MyGenericList {
-    def head: Int = throw new NoSuchElementException
+  object Empty extends MyGenericList[Nothing] {
+    def head: Nothing = throw new NoSuchElementException
 
-    def tail[Unit]: MyGenericList[Unit] = throw new NoSuchElementException
+    def tail: MyGenericList[Nothing] = throw new NoSuchElementException
 
     def isEmpty: Boolean = true
 
-    def add[B](elem: B): MyGenericList[B] = new Cons(elem, this)
+    def add[B >: Nothing](elem: B): MyGenericList[B] = new Cons(elem, this)
 
     override def elementToString: String = s""
   }
 
-  class Cons(e: Int, tailElem: MyGenericList) extends MyGenericList {
-    def head: Int = e
+  class Cons[+A](e: A, tailElem: MyGenericList[A]) extends MyGenericList[A] {
+    def head: A = e
 
-    def tail: MyList = this.tailElem
+    def tail: MyGenericList[A] = this.tailElem
 
     def isEmpty: Boolean = false
 
-    def add(elem: Int): MyList = new Cons(elem, this)
+    def add[B >: A](elem: B): MyGenericList[B] = new Cons(elem, this)
 
     override def elementToString: String = tailElem match {
       case Empty => s"$e"
