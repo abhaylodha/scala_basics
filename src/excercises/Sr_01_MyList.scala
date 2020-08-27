@@ -7,7 +7,7 @@ object Sr_01_MyList extends App {
     * head - returns first element of the list
     * tail - returns the remainder of the list
     * isEmpty - returns true if the list is empty, else false.
-    * add(int) - returns a new lsit with element added.
+    * add(int) - returns a new list with element added.
     * override toString - for String representation of the list.
     *
     */

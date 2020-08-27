@@ -1,15 +1,26 @@
 package excercises
 
-object Sr_02_MyGenericList extends App {
+object Sr_03_MyGenericListWithPredicates extends App {
 
   /**
    * Create a generic types Linked List, such that
    * head - returns first element of the list
    * tail - returns the remainder of the list
    * isEmpty - returns true if the list is empty, else false.
-   * add(item) - returns a new list with element added.
+   * add(int) - returns a new list with element added.
    * override toString - for String representation of the list.
-   *
+   * 
+   * Extras :
+   * 1. Add a generic trait MyTrait[T] wit ha little method : test(T) => Boolean 
+   * 2. Add a generic trait MyTransformer[A, B] to Convert from A type list to B type.
+   * 3. Add following function to List
+   *     A. map((myTransformer) => List)
+   *     B. filter(myPredicate => List)
+   *     C. flatMap(myTransFormer from A to List[B] => List[B]) 
+   *  
+   * For Ex -
+   * If class EvenPredicate extends MyPredicate[Int], then test method will return if argumetn is even or not ?
+   * IF class StringToInt extends MyTransformer[String, Int] 
    */
 
   abstract class MyGenericList[+A] {
