@@ -1,6 +1,6 @@
 package excercises
 
-object Sr_03_MyListWithPredicates extends App {
+object Sr_03_MyListWithFeatures extends App {
 
   /**
    * Create a generic types Linked List, such that
@@ -33,7 +33,7 @@ object Sr_03_MyListWithPredicates extends App {
   }
 
   trait MyTransformer[-A, B] {
-    def transform[B](e: A): B
+    def transform(e: A): B
   }
 
   trait MyFilter[+T] {
@@ -96,7 +96,7 @@ object Sr_03_MyListWithPredicates extends App {
     def ++[B >: A](list: MyList[B]): MyList[B] = new Cons(head, tailElem ++ list)
 
     def flatMap[B](transformer: MyTransformer[A, MyList[B]]): MyList[B] =
-      transformer.transform(head) //++ tail.flatMap(transformer)
+      transformer.transform(head) ++ tail.flatMap(transformer)
 
     override def elementToString: String = tailElem match {
       case Empty => s"$e"
@@ -110,11 +110,32 @@ object Sr_03_MyListWithPredicates extends App {
   val l3 = l2.add(10)
   println(l3.toString)
 
-  val l5 = new Cons(1, new Cons(2, new Cons(3, new Cons(4, Empty))))
-  println(s"$l5")
+  val l5 = new Cons(1, new Cons(2, new Cons(3, new Cons(4, new Cons(5, new Cons(6, new Cons(7, Empty)))))))
+  println(s"l5 = $l5")
   println(s"${l5.add(5)}")
   println(s"${l5.tail}")
   println(s"${l5.tail.head}")
+
+  val myTransform = new MyTransformer[Int, Int] {
+    override def transform(e: Int): Int = e + 5
+  }
+
+  val l6 = l5.map(myTransform)
+  println(s"l6 = $l6")
+
+  val myPredicate = new MyPredicate[Int] {
+    def test(e: Int): Boolean = e % 3 == 0
+  }
+
+  val l7 = l5.filter(myPredicate)
+  println(s"l7 = $l7")
+
+  val myTransform2 = new MyTransformer[Int, MyList[Int]] {
+    override def transform(n: Int): MyList[Int] = new Cons(n, new Cons(n + 5, Empty))
+  }
+
+  val l8 = l5.flatMap(myTransform2)
+  println(s"l8 = $l8")
 
 }
 
