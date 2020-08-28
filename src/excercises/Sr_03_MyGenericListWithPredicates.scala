@@ -36,40 +36,35 @@ object Sr_03_MyGenericListWithPredicates extends App {
     def filter(test: T => Boolean): MyGenericList[T]
   }
 
+  trait MyFlattener[+T] {
+    def flatMap[B](flattenFunc: T => MyGenericList[B]): MyGenericList[B]
+  }
+
   trait MyTransformer[+A] {
     def map[B](a: A => B): MyGenericList[B]
   }
 
-  abstract class MyGenericList[+A] extends MyFilter[A] with MyTransformer[A] {
+  abstract class MyGenericList[+A]
+    extends MyFilter[A]
+    with MyTransformer[A]
+    with MyFlattener[A] {
     def head: A
-
     def tail: MyGenericList[A]
-
     def isEmpty: Boolean
-
     def add[B >: A](elem: B): MyGenericList[B]
-
-    def map[B](a: A => B): MyGenericList[B]
-
     def elementToString: String
-
     override def toString = s"[$elementToString]"
   }
 
   object Empty extends MyGenericList[Nothing] {
     def head: Nothing = throw new NoSuchElementException
-
     def tail: MyGenericList[Nothing] = throw new NoSuchElementException
-
     def isEmpty: Boolean = true
-
     def add[B >: Nothing](elem: B): MyGenericList[B] = new Cons(elem, Empty)
-
     def test(predicate: Nothing => Boolean) = true
     def filter(test: Nothing => Boolean): MyGenericList[Nothing] = Empty
-
     def map[B](transform: Nothing => B): Nothing = throw new NoSuchElementException
-
+    def flatMap[B](flattenFunc: Nothing => MyGenericList[B]): Nothing = throw new NoSuchElementException
     override def elementToString: String = s""
   }
 
@@ -91,6 +86,28 @@ object Sr_03_MyGenericListWithPredicates extends App {
     def map[B](transform: A => B): MyGenericList[B] = tailElem match {
       case Empty => new Cons(transform(e), Empty)
       case _ => new Cons(transform(e), tailElem.map(transform))
+    }
+
+    def flatMap[B](flattenFunc: A => MyGenericList[B]): MyGenericList[B] = {
+      def merge(acc: MyGenericList[B], a: MyGenericList[B]): MyGenericList[B] = {
+        a.tail match {
+          case Empty => acc.add(a.head)
+          case _ => merge(acc.add(a.head), a.tail)
+        }
+      }
+
+      def flatten(acc: MyGenericList[B], a: MyGenericList[MyGenericList[B]]): MyGenericList[B] = {
+        a.tail match {
+          case Empty => merge(acc, a.head)
+          case _ => {
+            println(s"merge($acc, $a.head), $a.tail")
+            val result = flatten(merge(acc, a.head), a.tail)
+            println(s"result = $result")
+            result
+          }
+        }
+      }
+      flatten(Empty, this.map(flattenFunc))
     }
 
     override def elementToString: String = tailElem match {
@@ -118,5 +135,15 @@ object Sr_03_MyGenericListWithPredicates extends App {
   println("l6 : " + l6)
   println("l7 : " + l7)
 
+  val t: MyGenericList[String] = Empty
+  val originalList = new Cons("a,b,c", new Cons("d,e", new Cons("f,g", new Cons("h", Empty))))
+  val stringList = originalList
+    .flatMap(i => i.split(",").foldLeft(t)((lst, item) => {
+      println(s"Adding $item")
+      lst.add(item)
+    }))
+
+  println(originalList)
+  println(stringList)
 }
 
