@@ -47,10 +47,29 @@ object Sr_01_WhatsAFunction extends App {
   /**
    * Exercises
    * 1. Define a function which takes 2 strings and concatenates them.
-   * 2. In MyList - Transform MyPredicate and MyTransformer into function types.
-   * 3. Define a function which takes an argument ans returns another function which takes an Int and returns an Int.
+   * 2. In MyList - Transform MyPredicate and MyTransformer into function types. (Sr_05_MyListWithFunctionalWay)
+   * 3. Define a function which takes an argument and returns another function which takes an Int and returns an Int.
    *    Define the type of a fucntion
    *    How do you implement it ?
    */
+
+  val concatenator: (String, String) => String = new Function2[String, String, String] {
+    def apply(a: String, b: String): String = s"$a$b"
+  }
+
+  println(concatenator("abcd", "1234"))
+
+  val increaser = new Function1[Int, Int => Int] {
+    override def apply(a: Int) = new Function1[Int, Int] {
+      override def apply(b: Int) = a + b
+    }
+  }
+
+  val increaseBy5 = increaser(5)
+  val increaseBy14 = increaser(14)
+
+  println(increaseBy5(4))
+  println(increaseBy14(4))
+  println(increaser(55)(4)) // Curried function.
 
 }

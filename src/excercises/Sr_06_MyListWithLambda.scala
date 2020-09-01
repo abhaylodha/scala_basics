@@ -1,6 +1,6 @@
 package excercises
 
-object Sr_04_MyListWithCaseClasse extends App {
+object Sr_06_MyListWithLambda extends App {
 
   /**
    * Create a generic types Linked List, such that
@@ -28,14 +28,6 @@ object Sr_04_MyListWithCaseClasse extends App {
    * [1, 2, 3].
    */
 
-  trait MyPredicate[-T] {
-    def test(e: T): Boolean
-  }
-
-  trait MyTransformer[-A, B] {
-    def transform(e: A): B
-  }
-
   trait MyFilter[+T] {
     def filter(test: T => Boolean): MyList[T]
   }
@@ -51,9 +43,12 @@ object Sr_04_MyListWithCaseClasse extends App {
     def add[B >: A](elem: B): MyList[B]
     def elementToString: String
     override def toString = s"[$elementToString]"
-    def map[B](transformer: MyTransformer[A, B]): MyList[B]
-    def flatMap[B](transformer: MyTransformer[A, MyList[B]]): MyList[B]
-    def filter(predicate: MyPredicate[A]): MyList[A]
+
+    //Higher Order functions.
+    //Function which takes other function as a parameter or returns another function.
+    def map[B](transformer: (A) => B): MyList[B]
+    def flatMap[B](transformer: (A) => MyList[B]): MyList[B]
+    def filter(predicate: A => Boolean): MyList[A]
     def ++[B >: A](list: MyList[B]): MyList[B]
   }
 
@@ -64,9 +59,9 @@ object Sr_04_MyListWithCaseClasse extends App {
     def add[B >: Nothing](elem: B): MyList[B] = new Cons(elem, Empty)
     def test(predicate: Nothing => Boolean) = true
     override def elementToString: String = s""
-    def map[B](transformer: MyTransformer[Nothing, B]): MyList[B] = Empty
-    def flatMap[B](transformer: MyTransformer[Nothing, MyList[B]]): MyList[B] = Empty
-    def filter(predicate: MyPredicate[Nothing]): MyList[Nothing] = Empty
+    def map[B](transformer: (Nothing) => B): MyList[B] = Empty
+    def flatMap[B](transformer: Nothing => MyList[B]): MyList[B] = Empty
+    def filter(predicate: Nothing => Boolean): MyList[Nothing] = Empty
     def ++[B >: Nothing](list: MyList[B]): MyList[B] = list
   }
 
@@ -80,20 +75,20 @@ object Sr_04_MyListWithCaseClasse extends App {
     def add[B >: A](elem: B): MyList[B] = new Cons(elem, this)
 
     def test(predicate: A => Boolean) = predicate(e)
-    def filter(predicate: MyPredicate[A]): MyList[A] = {
-      if (predicate.test(head))
+    def filter(predicate: A => Boolean): MyList[A] = {
+      if (predicate(head))
         new Cons(head, tailElem.filter(predicate))
       else
         tailElem.filter(predicate)
     }
 
-    def map[B](transformer: MyTransformer[A, B]): MyList[B] =
-      new Cons(transformer.transform(e), tailElem.map(transformer))
+    def map[B](transformer: (A) => B): MyList[B] =
+      new Cons(transformer(e), tailElem.map(transformer))
 
     def ++[B >: A](list: MyList[B]): MyList[B] = new Cons(head, tailElem ++ list)
 
-    def flatMap[B](transformer: MyTransformer[A, MyList[B]]): MyList[B] =
-      transformer.transform(head) ++ tail.flatMap(transformer)
+    def flatMap[B](transformer: (A) => MyList[B]): MyList[B] =
+      transformer(head) ++ tail.flatMap(transformer)
 
     override def elementToString: String = tailElem match {
       case Empty => s"$e"
@@ -113,25 +108,13 @@ object Sr_04_MyListWithCaseClasse extends App {
   println(s"${l5.tail}")
   println(s"${l5.tail.head}")
 
-  val myTransform = new MyTransformer[Int, Int] {
-    override def transform(e: Int): Int = e + 5
-  }
-
-  val l6 = l5.map(myTransform)
+  val l6 = l5.map(_ + 5)
   println(s"l6 = $l6")
 
-  val myPredicate = new MyPredicate[Int] {
-    def test(e: Int): Boolean = e % 3 == 0
-  }
-
-  val l7 = l5.filter(myPredicate)
+  val l7 = l5.filter(_ % 3 == 0)
   println(s"l7 = $l7")
 
-  val myTransform2 = new MyTransformer[Int, MyList[Int]] {
-    override def transform(n: Int): MyList[Int] = new Cons(n, new Cons(n + 5, Empty))
-  }
-
-  val l8 = l5.flatMap(myTransform2)
+  val l8 = l5.flatMap((elem: Int) => new Cons(elem, new Cons(elem + 5, Empty)))
   println(s"l8 = $l8")
 
   //Adding case class/object qualifier to the list made it so much powerful,
