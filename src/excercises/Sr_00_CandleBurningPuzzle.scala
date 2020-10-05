@@ -15,27 +15,27 @@ import scala.annotation.tailrec
  * For 5 candles
  * Total		Candles		Half remains
  * 0			5  		0
- * 5  			2  			1
- * 7  			1  			1
- * 8  			0  			2
- * 8  			1  			0
- * 9  			0  			1
+ * 5  			2  		1
+ * 7  			1  		1
+ * 8  			0  		2
+ * 8  			1  		0
+ * 9  			0  		1
  * For 5 Candles, total candles we can burn are : 9
  *
  * For 10 candles
  * Total		Candles		Half remains
  * 0			10  		0
- * 10  			5  			0
- * 15  			2  			1
- * 17  			1  			1
- * 18  			0  			2
- * 18  			1  			0
- * 19  			0  			1
+ * 10  			5  		0
+ * 15  			2  		1
+ * 17  			1  		1
+ * 18  			0  		2
+ * 18  			1  		0
+ * 19  			0  		1
  * For 10 Candles, total candles we can burn are : 19
  *
  * For 47 candles
  * Total		Candles		Half remains
- * 0			47  	0
+ * 0			47	  	0
  * 47  			23  		1
  * 70  			11  		2
  * 81  			6  		1
