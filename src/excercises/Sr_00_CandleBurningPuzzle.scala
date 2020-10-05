@@ -5,7 +5,7 @@ import scala.annotation.tailrec
 /**
  * For 3 candles
  * Total		Candles		Half remains
- * 0			3  			0
+ * 0			3  		0
  * 3  			1  		1
  * 4  			0  		2
  * 4  			1  		0
