@@ -33,6 +33,20 @@ import scala.annotation.tailrec
  * 19  			0  				1
  * For 10 Candles, total candles we can burn are : 19
  *
+ * For 47 candles
+ * Total		Candles		Half remains
+ * 0				47  			0
+ * 47  			23  			1
+ * 70  			11  			2
+ * 81  			6  				1
+ * 87  			3  				1
+ * 90  			1  				2
+ * 91  			1  				1
+ * 92  			0  				2
+ * 92  			1  				0
+ * 93  			0  				1
+ * For 47 Candles, total candles we can burn are : 93
+ *
  */
 object Sr_00_CandleBurningPuzzle extends App {
 
@@ -60,4 +74,6 @@ object Sr_00_CandleBurningPuzzle extends App {
   println("For 3 Candles, total candles we can burn are : " + getBurnCount(3))
   println("For 5 Candles, total candles we can burn are : " + getBurnCount(5))
   println("For 10 Candles, total candles we can burn are : " + getBurnCount(10))
+  println("For 47 Candles, total candles we can burn are : " + getBurnCount(47))
+
 }
